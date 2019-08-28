@@ -1,0 +1,16 @@
+server:
+  port: 8020
+  servlet:
+    context-path: /circuitBreaker
+    
+spring:
+  application:
+    name: spring-cloud-circuit-breaker
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9092/eureka}
+      
+  instance:
+    preferIpAddress: true
